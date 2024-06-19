@@ -1,23 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const HurricaneWarning = ({ color = "#000000", size = "30", ...mProps }) => {
+const MoonWaxing6 = ({ color = "#000000", size = "30", ...mProps }) => {
 	return (
 	
 
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
 	 viewBox="0 0 30 30" width={size} height={size} fill={color} stroke="auto" strokeWidth="auto" {...mProps} space="preserve">
-<path d="M7.8,24.6V7.45h1.13V24.6H7.8z M9.73,21.52v-6.6h8.55v6.6H9.73z M9.73,14.05v-6.6h8.55v6.6H9.73z M12.09,19.52h3.81v-2.51
-	h-3.81V19.52z M12.09,12.05h3.81v-2.5h-3.81V12.05z"/>
+<path d="M14.99,25.71c2.04,0,3.93-0.5,5.65-1.51s3.1-2.37,4.1-4.1s1.51-3.61,1.51-5.65s-0.5-3.92-1.51-5.65s-2.37-3.09-4.1-4.09
+	s-3.61-1.51-5.65-1.51c1.67,2.9,2.5,6.65,2.5,11.25c0,2.33-0.17,4.43-0.52,6.3S15.97,24.26,14.99,25.71z"/>
 </svg>
 
 );
 	};
 
-HurricaneWarning.propTypes = {
+MoonWaxing6.propTypes = {
 color: PropTypes.string,
 size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
 
-export default HurricaneWarning;
+export default MoonWaxing6;

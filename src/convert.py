@@ -19,7 +19,7 @@ def generateFile(filepath, content):
 
 def readAndParseContent(svgfilepath):
     contentProps = "width={size} height={size} fill={color} stroke=\"auto\" strokeWidth=\"auto\" {...mProps}"
-    contentPads = "import React from 'react';\n" + "import PropTypes from 'prop-types';\n\n" + "const --NAME-- = (props) => {\n\t" + "const { color, size, ...mProps } = props;\n\t" + "return (\n\t" + "--SVG--\n" + ");\n" + "\t};\n\n" + "--NAME--.propTypes = {\n" + "color: PropTypes.string,\n" + "size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),\n" + "};\n\n\n" + "--NAME--.defaultProps = {\n" + "color: '#000000',\n" + "size: '30',\n" + "};\n\n" + "export default --NAME--;"
+    contentPads = "import React from 'react';\n" + "import PropTypes from 'prop-types';\n\n" + "const --NAME-- = ({ color = \"#000000\", size = \"30\", ...mProps }) => {\n\t" + "return (\n\t" + "--SVG--\n" + ");\n" + "\t};\n\n" + "--NAME--.propTypes = {\n" + "color: PropTypes.string,\n" + "size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),\n" + "};\n\n\n" + "export default --NAME--;"
     svgfileContent = ""
 
     if os.path.exists(svgfilepath) and os.path.isfile(svgfilepath):

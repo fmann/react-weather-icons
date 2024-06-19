@@ -1,26 +1,13 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const DaySunnyOvercast = props => {
-	const { color, size, ...mProps } = props
+const DaySunnyOvercast = ({ color = "#000000", size = "30", ...mProps }) => {
 	return (
-		<svg
-			version="1.1"
-			id="Layer_1"
-			xmlns="http://www.w3.org/2000/svg"
-			x="0px"
-			y="0px"
-			viewBox="0 0 30 30"
-			width={size}
-			height={size}
-			fill={color}
-			stroke="auto"
-			strokeWidth="auto"
-			{...mProps}
-			space="preserve"
-		>
-			<path
-				d="M3.09,13.43c0,0.27,0.09,0.49,0.28,0.67s0.43,0.26,0.72,0.26h1.69c0.27,0,0.5-0.09,0.69-0.27s0.29-0.4,0.29-0.66
+	
+
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
+	 viewBox="0 0 30 30" width={size} height={size} fill={color} stroke="auto" strokeWidth="auto" {...mProps} space="preserve">
+<path d="M3.09,13.43c0,0.27,0.09,0.49,0.28,0.67s0.43,0.26,0.72,0.26h1.69c0.27,0,0.5-0.09,0.69-0.27s0.29-0.4,0.29-0.66
 	c0-0.29-0.09-0.53-0.28-0.71s-0.42-0.28-0.69-0.28H4.09c-0.29,0-0.53,0.09-0.72,0.28C3.18,12.89,3.09,13.13,3.09,13.43z M4.86,19.61
 	c0,0.97,0.35,1.81,1.06,2.52c0.71,0.71,1.54,1.06,2.51,1.06h6.86c0.97,0,1.8-0.35,2.49-1.05c0.69-0.7,1.04-1.54,1.04-2.53
 	c0-0.48-0.07-0.89-0.21-1.23c0.83-0.53,1.49-1.24,1.97-2.12c0.48-0.88,0.73-1.83,0.73-2.84c0-0.81-0.16-1.59-0.48-2.33
@@ -43,20 +30,16 @@ const DaySunnyOvercast = props => {
 	c0.18-0.17,0.26-0.39,0.26-0.67c0-0.28-0.1-0.51-0.29-0.69s-0.42-0.28-0.7-0.28c-0.26,0-0.49,0.1-0.68,0.29L20.94,6.4
 	C20.76,6.58,20.67,6.81,20.67,7.09z M23.25,13.43c0,0.27,0.09,0.49,0.28,0.67s0.43,0.26,0.72,0.26h1.69c0.27,0,0.5-0.09,0.69-0.27
 	s0.29-0.4,0.29-0.66c0-0.29-0.09-0.53-0.28-0.71s-0.42-0.28-0.69-0.28h-1.69c-0.29,0-0.53,0.09-0.72,0.28
-	C23.35,12.89,23.25,13.13,23.25,13.43z"
-			/>
-		</svg>
-	)
-}
+	C23.35,12.89,23.25,13.13,23.25,13.43z"/>
+</svg>
+
+);
+	};
 
 DaySunnyOvercast.propTypes = {
-	color: PropTypes.string,
-	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-}
+color: PropTypes.string,
+size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+};
 
-DaySunnyOvercast.defaultProps = {
-	color: '#000000',
-	size: '30',
-}
 
-export default DaySunnyOvercast
+export default DaySunnyOvercast;
