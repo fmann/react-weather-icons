@@ -1,10 +1,10 @@
 {
-	"name": "@intern0t/react-weather-icons",
-	"version": "1.0.3",
+	"name": "fmann/react-weather-icons",
+	"version": "1.0.4",
 	"description": "A ReactJS component library for @erikflowers's weather icons.",
 	"author": "intern0t",
 	"license": "GPL",
-	"repository": "git://github.com/intern0t/react-weather-icons.git",
+	"repository": "git://github.com/fmann/react-weather-icons.git",
 	"main": "dist/index.js",
 	"module": "dist/index.es.js",
 	"jsnext:main": "dist/index.es.js",
